@@ -1,0 +1,20 @@
+﻿@{ ViewData["Title"] = "Ana Sayfa"; }
+
+<div class="row" style="margin-top:10px">
+    <div class="col-lg-8 col-sm-12">
+        @await Component.InvokeAsync("Slider")
+    </div>
+    <div class="col-lg-4 col-sm-12">
+        @await Component.InvokeAsync("ImportantAnnounce")
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row" style="margin-top:15px">
+        <div class="col-12">
+            @await Component.InvokeAsync("Properties")
+        </div>
+    </div>
+</div>
+<div class="row  ">
+    <div class="col-xs-12 col-md-12"> @await Component.InvokeAsync("AnnouncementList")</div>
+</div>
